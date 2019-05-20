@@ -15,15 +15,23 @@ Checklist to browse before starting a JS project
   - [E2E](#e2e)
 - [Code](#code)
   - [Server communication](#server-communication)
+  - [Backend collaboration](#backend-collaboration)
+  - [Backend language](#backend-language)
+  - [Backend mocking strategy](#backend-mocking-strategy)
+  - [Authentication](#authentication)
+  - [Internationnalization](#internationnalization)
   - [State Management](#state-management)
   - [Async code style](#async-code-style)
   - [Code validation process](#code-validation-process)
+  - [Component isolation](#component-isolation)
 - [Style](#style)
   - [CSS Framework](#css-framework)
   - [Design process](#design-process)
   - [Integration process](#integration-process)
   - [CSS management](#css-management)
   - [CSS preprocessor](#css-preprocessor)
+  - [CSS postprocessor](#css-postprocessor)
+  - [Flexbox positionning](#flexbox-positionning)
 
 ## Framework
 
@@ -105,6 +113,36 @@ Never forbid to use other editor than the recomandation. Yet, most projects has 
 - GraphQL with Apollo
 - GraphQL manually
 
+### Backend collaboration
+
+- Same people
+- Same team, different people
+- Different team, same location
+- Different team, different location
+
+### Backend language
+
+- Java
+- Node
+- PHP
+- Other
+
+### Backend mocking strategy
+
+- Backend already present
+- Backend to develop during the project
+- Synchronous JSON mock in source files
+- Synchronous JSON mock with async simulation
+
+### Authentication
+
+- None
+- Login page
+- Header token
+- Cookie token
+- JWT
+- SSO
+
 ### State Management
 
 - Redux like implementation of the framework: Redux, VueX, NgRX
@@ -112,6 +150,15 @@ Never forbid to use other editor than the recomandation. Yet, most projects has 
 - MobX
 - Singleton services (especially for Angular)
 - Specific solution with RxJS
+
+### Internationnalization
+
+- None
+- Simple
+- Advanced
+- i18next
+- Async loading
+- Translation file format
 
 ### Async code style
 
@@ -126,6 +173,12 @@ Never forbid to use other editor than the recomandation. Yet, most projects has 
 - Push to master
 - PR Review
 - Pairing
+
+## Component isolation tool
+
+- Storybook
+- Styleguidist
+- None
 
 ## Style
 
@@ -164,3 +217,15 @@ Never forbid to use other editor than the recomandation. Yet, most projects has 
 - Stylus
 - CSS in JS
 
+### CSS postprocessor
+
+- None
+- Autoprefixer
+
+### Flexbox positionning
+
+Whether or not using flexbox for positionning.
+Almost no argument not to use it except IE support (IE 10-11 partial, bellow none)
+
+- No
+- Yes
